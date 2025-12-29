@@ -255,7 +255,9 @@
       position: relative;
       z-index: 1;
     }
-
+    a{
+      text-decoration: none;
+    }
     .services-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -336,6 +338,45 @@
       font-size: 0.85rem;
       font-style: italic;
     }
+/* Certificates Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 2000; 
+  padding-top: 80px; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+#caption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.close:hover { color: #00aaff; }
+
 
     /* ===== Contact Section ===== */
     .contact-section {
@@ -648,8 +689,6 @@
   </style>
 </head>
 <body>
-
-  <!-- دوائر الخلفية -->
   <div class="background-circles">
     <span></span>
     <span></span>
@@ -704,7 +743,6 @@
               <span class="skill">Responsive Design</span>
               <span class="skill">UI/UX</span>
               <span class="skill">Java</span>
-              <span class="skill">PHP</span>
               <span class="skill">Figma</span>
             </div>
           </div>
@@ -718,7 +756,7 @@
     <div class="services-container">
       <header class="services-header">
         <h1>OUR SERVICES</h1>
-        <p class="service-meta">Specialized solutions since 2020</p>
+        <p class="service-meta">Specialized solutions since 2023</p>
       </header>
       
       <div class="services-grid">
@@ -766,7 +804,6 @@
       </div>
     </div>
   </section>
-<!-- ✂️ بعد OUR SERVICES مباشرة، أضيف هذا -->
 
 <!-- Portfolio Section -->
 <section class="services-section" id="portfolio">
@@ -778,38 +815,48 @@
 
     <div class="services-grid">
       <div class="service-card">
+        <a href="./12ecf37065ece3b92ac9b9d972874b04.png">
         <img src="What_is_E_commerce_and_What_are_its_Applications_2_d2eb0d4402.webp" alt="E-commerce Project">
         <h2>E-Commerce Website</h2>
         <p>Fully responsive e-commerce platform with product filtering, cart, and checkout functionality. Focused on clean UI and easy navigation.</p>
         <p class="service-meta">HTML, CSS, JS</p>
+        </a>
       </div>
 
       <div class="service-card">
+        <a href="https://saram57.github.io/laonding-page-resurant/">
         <img src="01-Preview.__large_preview.jpg" alt="Restaurant Design">
         <h2>Restaurant Landing Page</h2>
         <p>Elegant one-page restaurant website with menu display, reservation section, and interactive layout for mobile and desktop.</p>
         <p class="service-meta">JavaScript, PHP</p>
+        </a>
       </div>
 
       <div class="service-card">
+        <a href="./WhatsApp Image 2025-12-29 at 7.23.04 PM.jpeg">
         <img src="download.jpeg" alt="Dashboard UI">
         <h2>Admin Dashboard</h2>
         <p>Modern dashboard design featuring charts, user statistics, dark mode, and a dynamic sidebar menu.</p>
         <p class="service-meta">Angular, Chart.js</p>
+        </a>
       </div>
 
       <div class="service-card">
+        <a href="https://saram57.github.io/ui-ux-portofilio/">
         <img src="amike-personal-website-template.jpg" alt="Portfolio Template">
         <h2>Personal Portfolio</h2>
         <p>This very portfolio site showcasing my skills, projects, and background in a creative and interactive way.</p>
         <p class="service-meta">HTML, CSS, JavaScript</p>
+        </a>
       </div>
 
       <div class="service-card">
+        <a href="https://www.behance.net/gallery/239706427/washing-app">
         <img src="af3cb124d221ac39f3ffcc1b0dfbb74a-645x1024.webp" alt="Figma UI">
         <h2>UI/UX Design</h2>
         <p>Designed mobile app screens and website flows using Figma with focus on user-centered layouts and color harmony.</p>
         <p class="service-meta">Figma</p>
+        </a>
       </div>
 
       <div class="service-card">
@@ -821,6 +868,8 @@
     </div>
   </div>
 </section>
+
+
 
   <!-- Contact Section -->
   <section class="contact-section" id="contact">
@@ -840,7 +889,7 @@
               </div>
               <div class="contact-text">
                 <h3>Location</h3>
-                <p>Cairo, Egypt</p>
+                <p>Mit Ghamr, Egypt</p>
               </div>
             </div>
             
@@ -850,7 +899,7 @@
               </div>
               <div class="contact-text">
                 <h3>Email</h3>
-                <a href="mailto:sara.maher@example.com">sara.maher@example.com</a>
+                <a href="mailto:sara.maher@example.com">saramaher781@gmail.com</a>
               </div>
             </div>
             
@@ -860,7 +909,7 @@
               </div>
               <div class="contact-text">
                 <h3>Phone</h3>
-                <a href="tel:+201234567890">+20 123 456 7890</a>
+                <a href="tel:+201234567890">+20 1557192957</a>
               </div>
             </div>
             
@@ -914,7 +963,7 @@
   <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   
-  <!-- JavaScript for responsive navbar -->
+
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
@@ -931,6 +980,7 @@
         hamburger.classList.remove('active');
       });
     });
+
   </script>
 </body>
 </html>
